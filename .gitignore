@@ -3,3 +3,7 @@ frontend/node_modules/
 
 # Ignore Python virtual environment in backend
 backend/.venv/
+
+node_modules*
+node_modules/
+node_modules
