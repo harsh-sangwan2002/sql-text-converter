@@ -1,4 +1,4 @@
-# Text SQL Convertor
+# SQL Text Convertor
 
 This project uses Python Flask for the backend and React for the frontend. It converts plain English queries into SQL queries and displays the result.
 
