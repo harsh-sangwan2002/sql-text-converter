@@ -1,1 +1,5 @@
-backend/.venv
+# Ignore Node.js modules in frontend
+frontend/node_modules/
+
+# Ignore Python virtual environment in backend
+backend/.venv/
