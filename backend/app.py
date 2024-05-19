@@ -169,3 +169,7 @@ def execute_query(query):
     result = new_chain(query)
 
     return result
+
+
+if __name__ == "__main__":
+    app.run(debug=False, port=5000, host="0.0.0.0")  # Run the Flask app in debug mode
