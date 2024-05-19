@@ -14,7 +14,7 @@ This project uses Python Flask for the backend and React for the frontend. It co
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/username/project-name.git
+git clone https://github.com/harsh-sangwan2003/sql-text-converter.git
 ```
 
 2. Install the backend dependencies:
