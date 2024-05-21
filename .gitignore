@@ -3,3 +3,5 @@ frontend/node_modules/
 
 # Ignore Python virtual environment in backend
 backend/.venv/
+
+sql-text-converter.mp4
