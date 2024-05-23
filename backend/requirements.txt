@@ -12,4 +12,3 @@ mysql-connector-python
 pymysql
 sentence-transformers
 chromadb
-faiss-cpu==1.7.4
