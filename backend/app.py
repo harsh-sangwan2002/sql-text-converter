@@ -74,6 +74,14 @@ def execute_query(query):
         "SELECT sum(stock_quantity) FROM t_shirts WHERE brand = 'Levi' AND color = 'White'"
     )
 
+    qns6 = db_chain.run("SELECT sum(stock_quantity) FROM t_shirts WHERE brand = 'Nike'")
+
+    qns7 = db_chain.run("SELECT sum(stock_quantity) FROM t_shirts WHERE brand = 'Levi'")
+
+    qns8 = db_chain.run(
+        "SELECT sum(stock_quantity) FROM t_shirts WHERE brand = 'Adidas'"
+    )
+
     few_shots = [
         {
             "Question": "How many t-shirts do we have left for Nike in XS size and white color?",
@@ -108,6 +116,24 @@ def execute_query(query):
             "SQLResult": "Result of the SQL query",
             "Answer": qns5,
         },
+        {
+            "Question": "How many t-shirts do we have left for Nike in XS size and white color?",
+            "SQLQuery": "SELECT sum(stock_quantity) FROM t_shirts WHERE brand = 'Nike'",
+            "SQLResult": "Result of the SQL query",
+            "Answer": qns6,
+        },
+        {
+            "Question": "How many t-shirts do we have left for Nike in XS size and white color?",
+            "SQLQuery": "SELECT sum(stock_quantity) FROM t_shirts WHERE brand = 'Levi'",
+            "SQLResult": "Result of the SQL query",
+            "Answer": qns7,
+        },
+        {
+            "Question": "How many t-shirts do we have left for Nike in XS size and white color?",
+            "SQLQuery": "SELECT sum(stock_quantity) FROM t_shirts WHERE brand = 'Adidas'",
+            "SQLResult": "Result of the SQL query",
+            "Answer": qns8,
+        },
     ]
 
     embeddings = HuggingFaceEmbeddings(
@@ -120,7 +146,7 @@ def execute_query(query):
 
     example_selector = SemanticSimilarityExampleSelector(
         vectorstore=vectorstore,
-        k=2,
+        k=5,
     )
     example_selector.select_examples(
         {"Question": "How many Adidas T shirts I have left in my store?"}
