@@ -29,7 +29,7 @@ const QuestionForm = ({ setQueryResult }) => {
 
     const interval = setInterval(() => {
       setProgress((oldProgress) => {
-        const newProgress = oldProgress + 4;
+        const newProgress = oldProgress + 2;
         if (newProgress === 100) {
           clearInterval(interval);
         }
