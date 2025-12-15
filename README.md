@@ -1,8 +1,8 @@
 # SQL Text Convertor
 
-• Engineered AI-powered query converter using Python and Flask backend that translates natural language into SQL queries, improving user efficiency by 30%.
-• Built intelligent response system with React and JavaScript frontend, enhancing interactive UX and boosting user engagement by 25%.
-• Implemented secure MySQL database integration with connection pooling and query optimization for improved perfor- mance.
+- Engineered AI-powered query converter using Python and Flask backend that translates natural language into SQL queries, improving user efficiency by 30%.
+- Built intelligent response system with React and JavaScript frontend, enhancing interactive UX and boosting user engagement by 25%.
+- Implemented secure MySQL database integration with connection pooling and query optimization for improved perfor- mance.
 
 https://github.com/harsh-sangwan2003/sql-text-converter/assets/84121947/f6918631-8a84-4731-ab6c-9fe886d37418
 
